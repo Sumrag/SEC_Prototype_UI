@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Walmart Demo</title>
+<link rel="stylesheet" type="text/css" href="styleheader.css" 
+
+<link rel="icon" href="../walmart_ico.png" type="image/png">
+  <script type="text/javascript">
+  <!--
+    function load() {
+		document.form1.department.focus();
+		var arg = new Object;
+		var pair=location.search.substring(1).split('&');
+		for(var i=0;pair[i];i++) {
+	    	var kv = pair[i].split('=');
+	    	arg[kv[0]]=kv[1];
+		}
+		if(arg.department.toLowerCase() == "wine") {
+			document.location = "WineisHere.html";
+		}
+
+	}
+    function check() {
+      if (document.form1.department.value.toLowerCase() == "wine") {
+        document.location = "WineisHere.html";
+      } else {
+        alert('Department not found');
+        return false;
+      }
+    }
+  // -->
+  </script>
+</head>
+<center>
+
+<div id="logo">
+<body onLoad="load()">
+<p><img src="../walmart_logo.png" alt="corp.logo" /></p>
+</div> 
+
+
+<h1>Please describe the department you are looking for:</h1>
+<FORM name="form1" >
+<INPUT type="text" name="department" value="" size="80" />
+<a type="button" onclick="return check();"><img src="searchbutton.png"></a><BR><BR>
+<a type="button" onclick="location.href='../index.html'"><img src="mainmenu.png"></a></BUTTON>
+<a type="button" onclick="location.href='../Product/Search.html'"><img src="ProductSearchButton.png"></a><BR><BR>
+
+ </FORM>
+
+</center>
+</body>
+</html>
