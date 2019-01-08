@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Walmart Demo</title>
+<link rel="stylesheet" type="text/css" href="styleheader.css" 
+<link rel="icon" href="../walmart_ico.png" type="image/png">
+  <script type="text/javascript">
+  <!--
+    function load() {
+		document.form1.item.focus();
+		var arg = new Object;
+		var pair=location.search.substring(1).split('&');
+		for(var i=0;pair[i];i++) {
+	    	var kv = pair[i].split('=');
+	    	arg[kv[0]]=kv[1];
+		}
+		if(arg.item.toLowerCase() == "asuspc") {
+			document.location = "ASUSPCList.html";
+		}
+
+	}
+    function check() {
+      if (document.form1.item.value.toLowerCase() == "asuspc") {
+        document.location = "ASUSPCList.html";
+      } else {
+        alert('Product not found');
+        return false;
+      }
+    }
+  // -->
+  </script>
+</head>
+<center>
+<div id="logo"> 
+<body onLoad="load()">
+<p><img src="../walmart_logo.png" alt="corp.logo" /></p>
+</div> 
+
+
+<h1>Please describe what you are searching for:</h1>
+<FORM name="form1" >
+<INPUT type="text" name="item" value="" size="80" />
+<a type="button" onclick="return check();"><img src="searchbutton.png"></a><BR><BR>
+<a  onclick="location.href='../index.html'"><img src="mainmenu.png"></a>
+<a type="button" onclick="location.href='../Department/Search.html'"><img src="DepartmentSearchButton.png"></a><BR><BR>
+
+ </FORM>
+
+</center>
+
+</body>
+</html>
